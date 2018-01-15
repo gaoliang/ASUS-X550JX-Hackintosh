@@ -334,6 +334,34 @@
 				RiV1VHh4eHgA
 				</data>
 			</dict>
+			<dict>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				AQUJAAQAAAAEAAAA
+				</data>
+				<key>Name</key>
+				<string>AppleIntelFramebufferAzul</string>
+				<key>Replace</key>
+				<data>
+				/wAJAAQAAAAEAAAA
+				</data>
+			</dict>
+			<dict>
+				<key>Disabled</key>
+				<true/>
+				<key>Find</key>
+				<data>
+				AgQJAAAIAACCAAAA
+				</data>
+				<key>Name</key>
+				<string>AppleIntelFramebufferAzul</string>
+				<key>Replace</key>
+				<data>
+				/wAJAAAIAACCAAAA
+				</data>
+			</dict>
 		</array>
 	</dict>
 	<key>RtVariables</key>
