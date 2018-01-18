@@ -34,9 +34,9 @@
 |[Lilu](https://github.com/vit9696/Lilu)|部分kext依赖的框架|
 |[IntelGraphicsFixup](https://sourceforge.net/projects/intelgraphicsfixup/)|修复Intel集显的小问题|
 |[AppleALC](https://github.com/vit9696/AppleALC)|声卡驱动|
-还有部分没有写上的等待以后添加
 |[AppleBacklightInjector.kext](https://www.tonymacx86.com/threads/guide-laptop-backlight-control-using-applebacklightinjector-kext.218222/)|亮度调节|
 
+还有部分没有写上的等待后续添加	
 ## 部分问题的解决记录
 #### 10.12.4之后亮度无法调节的解决
 使用AppleBacklightInjector.text代替之前的inetlBacklight.kext,[使用方法](https://www.tonymacx86.com/threads/guide-laptop-backlight-control-using-applebacklightinjector-kext.218222/)
