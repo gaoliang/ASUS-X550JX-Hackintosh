@@ -15,12 +15,12 @@
 - [x] HDMI输出
 - [x] USB3.0 USB2.0
 - [x] WIFI/蓝牙(需更换网卡)
+- [x] 电量显示正常
 - [x] 触控板（设置界面可能会异常）
 - [x] 睡眠和唤醒
 - [x] Fn快捷键
 
 ## 等待修复的问题
-- [ ] 状态栏电量在10.13使用APFS文件系统并且开启SSD TRIM后开机会不显示，插拔电源即可恢复
 - [ ] 蓝牙连接蓝牙耳机时，有一定几率会出现wifi断开
 
 ## 相关驱动
@@ -30,7 +30,7 @@
 | kext  | 功能 | 
 | ---------- | -----------|
 | [FakePCIID*](https://github.com/RehabMan/OS-X-Fake-PCI-ID)  |包括显卡，WIFI和USB等多种特性|
-|[ACPIBaterryManager](https://github.com/RehabMan/OS-X-ACPI-Battery-Driver)|电量显示相关|
+|[ACPIBatteryManager](https://github.com/RehabMan/OS-X-ACPI-Battery-Driver)|电量显示相关|
 |[Lilu](https://github.com/vit9696/Lilu)|部分kext依赖的框架|
 |[IntelGraphicsFixup](https://sourceforge.net/projects/intelgraphicsfixup/)|修复Intel集显的小问题|
 |[AppleALC](https://github.com/vit9696/AppleALC)|声卡驱动|
