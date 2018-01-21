@@ -35,6 +35,8 @@
 |[IntelGraphicsFixup](https://sourceforge.net/projects/intelgraphicsfixup/)|修复Intel集显的小问题|
 |[AppleALC](https://github.com/vit9696/AppleALC)|声卡驱动|
 |[AppleBacklightInjector.kext](https://www.tonymacx86.com/threads/guide-laptop-backlight-control-using-applebacklightinjector-kext.218222/)|亮度调节|
+|[AzulPatcher4600.kext](https://github.com/coderobe/AzulPatcher4600)|修复开机和唤醒鼠标卡顿|
+|||
 
 还有部分没有写上的等待后续添加	
 ## 部分问题的解决记录
