@@ -1,6 +1,9 @@
 # ASUS X550JX 黑苹果相关文件
 ## 简介
-这是华硕X550JX（国内名称为飞行堡垒FX50JX)的黑苹果相关文件, 这套配置从16年的10.11一路升级到10.13。期间修改了许多驱动方法和配置，目前已经相对较完美。EFI中还包含了ubuntu16.04和windows的启动引导，如不需要可删除。
+![截图](screenshots/about.png)
+这是华硕X550JX（国内名称为飞行堡垒FX50JX)的黑苹果相关文件, 这套配置从16年的10.11一路升级到10.14。期间修改了许多驱动方法和配置，目前已经相对较完美。EFI中还包含了ubuntu16.04和windows的启动引导，如不需要可删除。
+
+目前master分支支持的Mac OS版本： 10.14.1， 历史版本请查看[release记录](https://github.com/gaoliang/ASUS-X550JX-Hackintosh/releases)
 
 :warning: :warning: :warning: 
 
@@ -25,7 +28,6 @@
 - [x] 触控板（设置界面可能会异常）
 - [x] 睡眠和唤醒
 - [x] Fn快捷键
-
 ## 等待修复的问题
 - [ ] 蓝牙连接蓝牙耳机时，有一定几率会出现wifi断开
 
@@ -36,18 +38,25 @@
 | kext  | 功能 | 
 | ---------- | -----------|
 | [FakePCIID*](https://github.com/RehabMan/OS-X-Fake-PCI-ID)  |包括显卡，WIFI和USB等多种特性|
+|[FakeSMC](https://github.com/RehabMan/OS-X-FakeSMC-kozlek)|FakeSMC is an open source SMC device driver/emulator developed by netkas.|
 |[ACPIBatteryManager](https://github.com/RehabMan/OS-X-ACPI-Battery-Driver)|电量显示相关|
 |[Lilu](https://github.com/vit9696/Lilu)|部分kext依赖的框架|
-|[IntelGraphicsFixup](https://sourceforge.net/projects/intelgraphicsfixup/)|修复Intel集显的小问题|
 |[AppleALC](https://github.com/vit9696/AppleALC)|声卡驱动|
 |[AppleBacklightInjector.kext](https://www.tonymacx86.com/threads/guide-laptop-backlight-control-using-applebacklightinjector-kext.218222/)|亮度调节|
-|[AzulPatcher4600.kext](https://github.com/coderobe/AzulPatcher4600)|修复开机和唤醒鼠标卡顿|
+|[WhateverGreen.kext](https://github.com/acidanthera/WhateverGreen)|Various patches necessary for certain ATI/AMD/Intel/Nvidia GPUs|
 |||
 
-还有部分没有写上的等待后续添加	
-## 部分问题的解决记录
-#### 10.12.4之后亮度无法调节的解决
-使用AppleBacklightInjector.text代替之前的inetlBacklight.kext,[使用方法](https://www.tonymacx86.com/threads/guide-laptop-backlight-control-using-applebacklightinjector-kext.218222/)
+####
 
-## config.plist解析
-todo
+## Change
+[10.14.1](https://github.com/gaoliang/ASUS-X550JX-Hackintosh/releases/tag/10.14.1)
+- 使用`WhateverGreen`代替`AzulPatcher4600.kext`和`IntelGraphicsFixup`
+- 添加FakeSMC全家桶，使iStats Menu支持各项硬件温度，频率的查看(cpu, gpu, ssd)
+![传感器](screenshots/sensors.png)
+- 更新clover到4784
+- 使用ApfsDriverLoader64.efi代替apfs.efi
+
+[10.13.2](https://github.com/gaoliang/ASUS-X550JX-Hackintosh/releases/tag/10.13.2)
+- 解决亮度无法调节问题
+使用AppleBacklightInjector.text代替之前的inetlBacklight.kext,[使用方法](https://www.tonymacx86.com/threads/guide-laptop-backlight-control-using-applebacklightinjector-kext.218222/)
+- 更新clover到4276
