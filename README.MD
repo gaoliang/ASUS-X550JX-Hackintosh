@@ -20,7 +20,7 @@
 - [x] CPU变频
 - [x] 显卡硬件加速(QE/CI)
 - [x] 亮度调节(小太阳)
-- [x] 音频
+- [x] 音频, 麦克风修复参见：[issue](https://github.com/gaoliang/ASUS-X550JX-Hackintosh/issues/16#issuecomment-481984993)
 - [x] HDMI输出
 - [x] USB3.0 USB2.0
 - [x] WIFI/蓝牙(需更换网卡)
